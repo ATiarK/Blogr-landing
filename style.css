@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+:root {
+    /* Color */
+    --introBG: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 50%);
+    --bodyBG: linear-gradient(90deg, hsl(237, 17%, 21%) 0%, hsl(237, 23%, 32%) 35%);
+    --hoverColor: hsl(355, 100%, 74%);
+    /* Text Color */
+    --footerText: hsl(240, 2%, 79%);
+    /* Fonts */
+    --fontOver: 'Overpass', sans-serif;
+    --fontUbuntu: 'Ubuntu', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: hsl(207, 13%, 34%);
+}
+
+h1 {
+    color: hsl(208, 49%, 24%);
+    font-family: var(--fontOver);
+    font-size: 2em;
+}
+
+h2 {
+    color: hsl(208, 49%, 24%);
+    font-family: var(--fontOver);
+    font-size: 1.5em;
+}
+
+h3 {
+    color: hsl(208, 49%, 24%);
+    font-family: var(--fontOver);
+    font-size: 1.17em;
+}
+
+h4 {
+    color: hsl(208, 49%, 24%);
+    font-family: var(--fontOver);
+    font-size: 1em;
+}
+
+h5 {
+    color: hsl(208, 49%, 24%);
+    font-family: var(--fontOver);
+    font-size: 0.83em;
+}
+
+h6 {
+    color: hsl(208, 49%, 24%);
+    font-family: var(--fontOver);
+    font-size: 0.67em;
+}
+
+p {
+    font-family: var(--fontOver);
+}
+
+.container {
+    margin: 20px 100px;
+}
+
+
+/* Intro Area */
+
+header {
+    background: var(--introBG);
+    z-index: 1;
+}
+
+nav {
+    font-family: var(--fontUbuntu);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    color: #FFF;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.left-nav {
+    display: flex;
+}
+
+.right-nav {
+    display: flex;
+}
+
+.logo {
+    height: fit-content;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0 10px 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 400px;
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.accounts {
+    margin-right: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+button {
+    font-size: 1em;
+}
+
+.roundBtn {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--fontUbuntu);
+    font-weight: 700;
+}
+
+.roundWhite {
+    background-color: #FFF;
+    color: var(--hoverColor);
+}
+
+.roundWhite:hover {
+    background-color: var(--hoverColor);
+    color: #FFF;
+}
+
+.roundTP {
+    background: transparent;
+    color: #FFF;
+}
+
+.learnM {
+    border: 1px solid #FFF;
+}
+
+.learnM:hover {
+    background-color: #FFF;
+    color: var(--hoverColor);
+}
+
+.intro {
+    background-image: url(./images/bg-pattern-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right -22em bottom -17em;
+    background-size: cover;
+    text-align: center;
+    padding: 150px 30px;
+}
+
+
+/* Designed Area */
+
+#designed {
+    background-image: url(./images/illustration-editor-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+/* Infrastructure Area */
+
+#infrastructure {
+    background: var(--bodyBG);
+}
+
+
+/* Laptop Area */
+
+
+/* Footer Area */
+
+
+/* Change Size */
+
+@media screen and (max-width:850px) {
+    .hamburger {
+        display: block;
+    }
+}
