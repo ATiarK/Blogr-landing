@@ -8,7 +8,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background:
 }
 
 header {
@@ -32,7 +31,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: 500;
     color: hsl(208, 49%, 24%);
 }
@@ -257,25 +256,43 @@ nav {
 .state {
     background: var(--gradientBlue);
     border-radius: 0 100px 0 100px;
-    height: 500px;
-    position: relative;
-    overflow: hidden;
+    height: 410px;
 }
 
 .background {
-    display: flex;
+    position: relative;
+    overflow: hidden;
+    /* display: flex; */
 }
 
-.state .background img {
+.circle {
     position: absolute;
     z-index: 1;
     top: -450px;
-    left: 200px;
+    left: -175px;
 }
 
-.state .background .img-holder img {
-    position: relative;
+.state .img-holder img {
+    position: absolute;
+    bottom: -125%;
+    left: 8%;
     z-index: 2;
+}
+
+.background .text {
+    margin-left: 600px;
+    margin-bottom: 130px;
+    z-index: 1;
+}
+
+.background .text h2 {
+    color: #FFF;
+    padding: 15px 0;
+}
+
+.background .text p {
+    color: #FFF;
+    opacity: 0.5;
 }
 
 
