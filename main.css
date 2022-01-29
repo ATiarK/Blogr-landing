@@ -17,6 +17,7 @@ body {
     font-size: 16px;
     font-family: "Outfit", sans-serif;
     font-family: "Ubuntu", sans-serif;
+    color: hsl(207, 13%, 34%);
 }
 
 h1 {
@@ -26,7 +27,8 @@ h1 {
 
 h2 {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 500;
+    color: hsl(208, 49%, 24%);
 }
 
 h3 {
@@ -176,7 +178,7 @@ nav {
 }
 
 .landing .buttons .main-btn:first-child {
-    background-color: white;
+    background-color: #FFF;
     color: #ff525d;
 }
 
@@ -194,6 +196,44 @@ nav {
 .landing .buttons .main-btn:last-child:hover {
     background-color: #FFF;
     color: hsl(355, 100%, 74%);
+}
+
+
+/* Designed Area */
+
+.design {
+    margin-top: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.design h2 {
+    text-align: center;
+}
+
+.text {
+    flex-basis: 50%;
+    line-height: 2;
+    margin-top: 100px;
+}
+
+.box {
+    padding: 10px;
+}
+
+.thumbnail {
+    display: flex;
+}
+
+.thumbnail .img-holder {
+    flex-basis: 50%;
+    margin-bottom: 50px;
+}
+
+.thumbnail .img-holder img {
+    position: absolute;
+    top: 5%;
+    width: 800px;
 }
 
 
