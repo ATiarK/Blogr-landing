@@ -13,53 +13,36 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-size: 16px;
-    margin: 0;
-    padding: 0;
     color: hsl(207, 13%, 34%);
 }
 
 h1 {
     color: hsl(208, 49%, 24%);
     font-family: var(--fontOver);
-    font-size: 2em;
+    font-size: 50px;
 }
 
 h2 {
     color: hsl(208, 49%, 24%);
     font-family: var(--fontOver);
-    font-size: 1.5em;
+    font-size: 35px;
 }
 
 h3 {
     color: hsl(208, 49%, 24%);
     font-family: var(--fontOver);
-    font-size: 1.17em;
-}
-
-h4 {
-    color: hsl(208, 49%, 24%);
-    font-family: var(--fontOver);
-    font-size: 1em;
-}
-
-h5 {
-    color: hsl(208, 49%, 24%);
-    font-family: var(--fontOver);
-    font-size: 0.83em;
-}
-
-h6 {
-    color: hsl(208, 49%, 24%);
-    font-family: var(--fontOver);
-    font-size: 0.67em;
+    font-size: 30px;
 }
 
 p {
     font-family: var(--fontOver);
+    font-size: 16px;
 }
 
 .container {
@@ -182,10 +165,10 @@ button {
 .intro {
     background-image: url(./images/bg-pattern-intro-desktop.svg);
     background-repeat: no-repeat;
-    background-position: right -22em bottom -17em;
-    background-size: cover;
+    background-position: right -83em bottom -76em;
+    background-size: auto;
     text-align: center;
-    padding: 150px 30px;
+    padding: 160px 30px;
 }
 
 
