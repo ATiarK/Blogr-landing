@@ -264,32 +264,36 @@ nav {
     background: var(--gradientBlue);
     border-radius: 0 100px 0 100px;
     height: 410px;
+    position: absolute;
 }
 
-.background {
+.state .background {
     position: relative;
     overflow: hidden;
-    /* display: flex; */
+}
+
+.state .text {
+    margin-left: 450px;
 }
 
 .circle {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     top: -500px;
     left: -215px;
 }
 
-.state .img-holder img {
+.state .img-holder {
+    z-index: 1;
     position: absolute;
-    bottom: -125%;
-    left: 8%;
-    z-index: 2;
+}
+
+.state .img-holder img {
+    margin-top: -65px;
 }
 
 .background .text {
     margin-left: 600px;
-    margin-bottom: 130px;
-    z-index: 1;
 }
 
 .background .text h2 {
@@ -306,10 +310,11 @@ nav {
 /* Laptop Area */
 
 .laptop {
-    margin-top: 100px;
+    margin-top: 450px;
     padding-top: 50px;
     padding-bottom: 200px;
     position: relative;
+    bottom: -60px;
 }
 
 .laptop .thumbnail .img-holder img {
@@ -357,4 +362,51 @@ footer {
     text-align: center;
     background: var(--gradientRed);
     color: white;
+    font-weight: 500;
 }
+
+
+/* Mobile Setting */
+
+@media screen and (max-width:1200px) {
+    .container {
+        padding-right: 20px;
+    }
+    .background .text {
+        margin-left: 400px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .container {
+        padding: 50px;
+    }
+    /* Design Area */
+    .design .thumbnail .img-holder img {
+        position: absolute;
+        top: 13%;
+        right: -20%;
+        width: 70%;
+    }
+    /* State Area */
+    .background .text {
+        margin: auto 0 auto 500px;
+        position: relative;
+        z-index: 1;
+    }
+    /* Laptop Area */
+    .laptop .thumbnail .img-holder img {
+        position: absolute;
+        top: 13%;
+        left: -20%;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:750px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (min-width:375px) {}
