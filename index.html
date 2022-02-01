@@ -34,7 +34,8 @@
                     <div class="dropdown">
                         <img src="./images/icon-hamburger.svg" alt="icon-hamburger" />
                         <ul>
-                            <li><span>Product</span><img src="./images/icon-arrow-light.svg" alt="" />
+                            <li class="down"><span>Product</span>
+                                <img src="./images/icon-arrow-dark.svg" alt="" />
                                 <ul>
                                     <li>Overview</li>
                                     <li>Pricing</li>
@@ -43,9 +44,23 @@
                                     <li>Integrations</li>
                                 </ul>
                             </li>
+                            <li><span>Company</span>
+                                <img src="./images/icon-arrow-dark.svg" alt="" /></li>
+                            <li><span>Connect</span>
+                                <img src="./images/icon-arrow-dark.svg" alt="" /></li>
                         </ul>
-                        <ul>
-                            <li><span>Company</span><img src="./images/icon-arrow-light.svg" alt="" />
+                        <!-- <ul class="dropdown-ul">
+                            <li class="dropdown-li"><span>Product</span><img src="./images/icon-arrow-light.svg" alt="" />
+                                <ul>
+                                    <li>Overview</li>
+                                    <li>Pricing</li>
+                                    <li>Marketplace</li>
+                                    <li>Features</li>
+                                    <li>Integrations</li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown-li"><span>Company</span><img src="./images/icon-arrow-light.svg" alt="" />
                                 <ul>
                                     <li>About </li>
                                     <li>Team </li>
@@ -53,9 +68,8 @@
                                     <li>Careers </li>
                                 </ul>
                             </li>
-                        </ul>
-                        <ul>
-                            <li><span>Connect </span><img src="./images/icon-arrow-light.svg" alt="" />
+
+                            <li class="dropdown-li"><span>Connect </span><img src="./images/icon-arrow-light.svg" alt="" />
                                 <ul>
                                     <li>Contact </li>
                                     <li>Newsletter </li>
@@ -67,7 +81,7 @@
                                 <button class="main-btn">Login </button>
                                 <button class="main-btn">Sign Up </button>
                             </div>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
 
@@ -110,7 +124,8 @@
     </header>
 
     <!-- Landing Page -->
-    <section class="landing"><img class="landing-bg" src="./images/bg-pattern-intro-desktop.svg" alt="">
+    <section class="landing"><img class="landing-bg desktop-img" src="./images/bg-pattern-intro-desktop.svg" alt="">
+        <img class="landing-bg mobile-img" src="./images/bg-pattern-intro-mobile.svg" alt="">
 
         <div class="middle-text">
             <h1>A modern publishing platform </h1>
@@ -139,7 +154,8 @@
                 </div>
             </div>
             <div class="img-holder">
-                <img src="./images/illustration-editor-desktop.svg" alt="">
+                <img class="desktop-img" src="./images/illustration-editor-desktop.svg" alt="">
+                <img class="mobile-img" src="./images/illustration-editor-mobile.svg" alt="">
             </div>
         </div>
     </section>
@@ -164,7 +180,8 @@
     <section class="laptop">
         <div class="container thumbnail">
             <div class="img-holder">
-                <img src="./images/illustration-laptop-desktop.svg" alt="" />
+                <img class="desktop-img" src="./images/illustration-laptop-desktop.svg" alt="" />
+                <img class="mobile-img" src="./images/illustration-laptop-mobile.svg" alt="" />
             </div>
             <div class="text">
                 <div class="box">
@@ -225,6 +242,7 @@
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/ATiarK">Ahmad Tiar K</a>.
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
