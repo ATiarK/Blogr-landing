@@ -42,7 +42,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/this-blogr-landing-page-challenge-hub-with-a-little-bit-of-js--h60KI3n3)
 - Live Site URL: [Live URL here](https://atiark.github.io/Blogr-landing/)
 
 ## My process
