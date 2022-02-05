@@ -108,7 +108,7 @@ nav {
 
 /* .link-items:hover ul { */
 
-.dropdown.show ul {
+.links .dropdown.show ul {
     display: block;
     position: absolute;
     background: #FFF;
@@ -125,6 +125,7 @@ nav {
 
 .link-items li:hover {
     font-weight: 700;
+    padding-left: 5px;
 }
 
 .link-items ul li {
@@ -327,7 +328,7 @@ nav {
 /* Laptop Area */
 
 .laptop {
-    margin-top: 450px;
+    margin-top: 550px;
     padding-top: 50px;
     padding-bottom: 200px;
     position: relative;
@@ -500,12 +501,11 @@ footer {
     .none ul {
         position: absolute;
         left: 50%;
-        top: 100%;
+        top: 75%;
         transform: translateX(-50%);
         background-color: white;
         border-radius: 7px;
         width: 80%;
-        padding: 20px;
         text-align: center;
     }
     .dropdown li {
@@ -526,6 +526,11 @@ footer {
     }
     .down li {
         padding: 10px 0;
+    }
+    .dropdown.show ul {
+        margin-left: 0;
+        padding: 0;
+        display: block;
     }
     /* end dropdown */
     nav .buttons {

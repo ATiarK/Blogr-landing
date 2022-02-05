@@ -6,3 +6,10 @@ for (let i = 0; i < dropDownButtons.length; i++) {
     });
 }
 console.log(dropDownButtons);
+
+function dropBtn() {
+    document.getElementsByClassName("dropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+    if (!e.target.matches("")) {}
+};
